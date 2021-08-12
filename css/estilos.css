@@ -440,8 +440,8 @@ section#img2 {
 
 #contenedor3 {
   width: 85vw;
-  height: 25vw;
-  margin-bottom: 2rem; }
+  height: 22vw;
+  margin-bottom: 0.5rem; }
 
 @media (min-width: 320px) and (max-width: 480px) {
   #contenedor1 {
@@ -453,6 +453,22 @@ section#img2 {
     height: 80vw;
     margin: 0rem; }
   #contenedor3 {
-    width: 85vw;
-    height: 25vw;
-    margin-bottom: 2rem; } }
+    width: 50vw;
+    height: 100vw;
+    margin-bottom: 0.5rem; }
+  .imagenes1__onlineOrder {
+    width: 15vw;
+    height: 20vw; }
+    .imagenes1__onlineOrder:hover {
+      transform: scale(1.1, 1.1); }
+  .imagenes1__domicOrder {
+    width: 15vw;
+    height: 20vw; }
+    .imagenes1__domicOrder:hover {
+      transform: scale(1.1, 1.1); }
+  .imagenes1__comercio {
+    width: 15vw;
+    height: 20vw;
+    margin-bottom: 1rem; }
+    .imagenes1__comercio:hover {
+      transform: scale(1.1, 1.1); } }
