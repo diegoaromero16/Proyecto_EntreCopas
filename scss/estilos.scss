@@ -1,41 +1,34 @@
 @charset "UTF-8";
-body {
-	max-width: 99.5%;
-	max-height: 100%;
-}
+
 .headerIndex__logoHeader {
 	width: 7rem;
 	height: 6rem;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
+	
 }
 .headerIndex__menu {
-	display: inline-block;
+	display: flex;
 	flex-direction: row;
-	justify-content: flex-end;
-	align-items: center;
-	margin: 0.5rem 0.5rem 0rem 0rem;
-	flex-wrap: wrap;
-	a {
+	font-size: 1rem;
+	list-style: none;
+	font-family: 'Libre Baskerville', serif;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Staatliches', cursive;
+	margin-left: 8rem;
+	.headerIndex__enlacesIndex {
+		color: black;
+		padding: 0.5rem;
+		text-decoration: none;
+		margin: 0rem 0.5rem 0rem 0.5rem;
 		&:hover {
 			background-color: #720004;
 			color: white;
 			transform: translate(5px, 5px);
 		}
 	}
-}
-.headerIndex__aHeader {
-	text-decoration: none;
-	display: inline-block;
-	padding: 0.5rem;
-	margin: 0rem 0.5rem 0rem 0.5rem;
-	font-family: 'Libre Baskerville', serif;
-	font-family: 'Montserrat', sans-serif;
-	font-family: 'Open Sans', sans-serif;
-	font-family: 'Staatliches', cursive;
-	color: black;
-	font-size: 1rem;
 }
 
 .redesDiv {
@@ -72,12 +65,16 @@ body {
 		height: 320px;
 	}
 }
+#carouselExampleIndicators{
+	height: 33.8vw;
+}
+
 .seccionDescripcindex__textoCentrado {
 	text-align: center;
 	font-family: 'Lato', sans-serif;
 	color: black;
     margin-bottom: 1rem;
-
+	margin-top: 2rem;
 }
 
 .fieldIndex__textoCentrado2 {
@@ -87,8 +84,6 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-family: 'Staatliches', cursive;
 }
-
-
 
 .imagenes1 {
 	display: flex;
@@ -237,13 +232,7 @@ select {
 	font-family: 'Open Sans', sans-serif;
 	font-family: 'Staatliches';
 }
-.estiloAHeader {
-	font-family: 'Libre Baskerville', serif;
-	font-family: 'Montserrat', sans-serif;
-	font-family: 'Open Sans', sans-serif;
-	font-family: 'Staatliches', cursive;
-	color: black;
-}
+
 #tabla1 {
 	border: 1px;
 	border-collapse: separate;
@@ -286,12 +275,6 @@ select {
 	padding: 0rem;
 	max-width: 100%;
 	margin-left: 0rem;
-}
-header {
-	display: flex;
-	flex-direction: row;
-	justify-content: stretch;
-	width: 100%;
 }
 
 #sideContacto {
@@ -341,47 +324,6 @@ footer {
 	border: 0.3rem;
 	border-color: black;
 	border-style: solid;
-}
-header#headerContactos {
-	grid-area: headerContactos;
-}
-section#imgPortada {
-	grid-area: imgPortada;
-}
-section#sectionContacto1 {
-	grid-area: sectionContacto1;
-}
-section#mapa {
-	grid-area: mapa;
-}
-aside#contacto {
-	grid-area: contacto;
-}
-section#formContacto {
-	grid-area: formContacto;
-}
-footer#footerContacto {
-	grid-area: footerContacto;
-	width: 98%;
-}
-header#headerIndex {
-	grid-area: headerIndex;
-}
-section#seccion1 {
-	grid-area: seccion1;
-}
-
-section#opcionesVenta {
-	grid-area: opcionesVenta;
-}
-section#seccion2 {
-	grid-area: seccion2;
-}
-footer#footerIndex {
-	grid-area: footerIndex;
-}
-section#img2 {
-	grid-area: img2;
 }
 
 .imagenesIndextipos {
@@ -457,71 +399,4 @@ section#img2 {
 	&:hover {
 		color: #720004;
 	}
-}
-
-
-#contenedor1{
-	margin-left: 0.5rem;
-	width: 97.5vw;
-	height: 37vw;
-}
-
-#contenedor2{
-	width: 97.5vw;
-	height: 17vw;
-}
-
-#contenedor3{
-	width: 85vw;
-	height: 22vw;
-	margin-bottom: 0.5rem;
-
-}
-
-@media(min-width: 320px) and (max-width: 480px){
-	#contenedor1{
-		margin-left: 0.5rem;
-		width: 97.5vw;
-		height: 37vw;
-	}
-	
-	#contenedor2{
-		width: 80vw;
-		height: 80vw;
-		margin: 0rem;
-	}
-	#contenedor3{
-		width: 50vw;
-		height: 100vw;
-		margin-bottom: 0.5rem;
-	
-	}
-	.imagenes1__onlineOrder {
-		
-		width: 15vw;
-		height: 20vw;
-		
-		&:hover {
-			transform: scale(1.1, 1.1);
-		}
-	}
-
-	.imagenes1__domicOrder {
-		
-		width: 15vw;
-		height: 20vw;
-		&:hover {
-			transform: scale(1.1, 1.1);
-		}
-	}
-	.imagenes1__comercio {
-		
-		width: 15vw;
-		height: 20vw;
-		margin-bottom: 1rem;
-		&:hover {
-			transform: scale(1.1, 1.1);
-		}
-	}
-
 }
