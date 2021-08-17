@@ -74,54 +74,15 @@
   font-family: 'Open Sans', sans-serif;
   font-family: 'Staatliches', cursive; }
 
-.imagenes1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: stretch;
-  flex-wrap: nowrap;
-  margin-top: 5rem; }
-
-.imagenes1__onlineOrder {
+.imagenes1__imgIndex {
   align-content: center;
-  width: 10rem;
-  height: 7rem; }
-  .imagenes1__onlineOrder:hover {
-    transform: scale(1.1, 1.1); }
-
-.imagenes1__domicOrder {
-  align-content: center;
-  width: 10rem;
-  height: 7rem; }
-  .imagenes1__domicOrder:hover {
-    transform: scale(1.1, 1.1); }
-
-.imagenes1__comercio {
-  align-content: center;
-  width: 10rem;
+  width: 9rem;
   height: 7rem;
-  margin-bottom: 1rem; }
-  .imagenes1__comercio:hover {
+  margin-left: 1.3rem; }
+  .imagenes1__imgIndex:hover {
     transform: scale(1.1, 1.1); }
 
-.titulos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  margin-top: 5rem; }
-
-.titulos__ooTitle {
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Staatliches', cursive; }
-
-.titulos__doTitle {
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Staatliches', cursive; }
-
-.titulos__cTitle {
+.titulos__Index {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-family: 'Open Sans', sans-serif;
@@ -303,13 +264,6 @@ footer {
   border-color: black;
   border-style: solid; }
 
-.imagenesIndextipos {
-  width: 10rem;
-  height: 10rem;
-  margin-left: 10rem; }
-  .imagenesIndextipos:hover {
-    transform: translate(3px, 5px); }
-
 .pOpciones {
   font-size: 2rem;
   margin-left: 10rem; }
@@ -342,12 +296,6 @@ footer {
 #butPresup {
   margin-top: 2rem; }
 
-.titulosCarrusel {
-  color: white; }
-
-.carousel-inner {
-  height: 28rem; }
-
 .titulosProductos {
   font-family: 'Lato', sans-serif;
   color: white;
@@ -371,3 +319,7 @@ footer {
   margin-left: 5rem; }
   .subtitulosProductos:hover {
     color: #720004; }
+
+@media (max-width: 768px) {
+  #contenedor1 {
+    display: none; } }
