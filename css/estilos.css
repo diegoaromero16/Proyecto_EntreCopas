@@ -68,7 +68,8 @@
   margin-top: 2rem; }
 
 .fieldIndex__textoCentrado2 {
-  margin: 0rem 0rem 0.1rem 0rem;
+  text-align: center;
+  margin-top: 1rem;
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-family: 'Open Sans', sans-serif;
@@ -77,8 +78,7 @@
 .imagenes1__imgIndex {
   align-content: center;
   width: 9rem;
-  height: 7rem;
-  margin-left: 1.3rem; }
+  height: 7rem; }
   .imagenes1__imgIndex:hover {
     transform: scale(1.1, 1.1); }
 
@@ -93,34 +93,15 @@
   height: 15rem;
   border-style: solid;
   border-color: black;
-  border-width: 0.2rem;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: stretch;
-  transition: height 2s; }
-
-.divSeccion2 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between; }
+  border-width: 0.2rem; }
 
 label {
   color: white; }
 
-.divSeccion2__textoCentrado3 .divOpciones__textoCentrado3 {
-  margin: 0.3rem 0rem 0.5rem 0rem;
+.fieldIndex__textoCentrado3 {
   font-family: 'Montserrat', sans-serif;
   font-family: 'Open Sans', sans-serif;
   font-family: 'Staatliches', cursive; }
-
-select {
-  font-size: 14px;
-  height: 30px;
-  padding: 5px;
-  width: 250px; }
 
 #btnBuscar {
   display: flex;
@@ -150,13 +131,15 @@ select {
 
 #fieldContactos {
   background-image: radial-gradient(#720004, black);
-  max-width: 96%;
-  height: 5rem;
+  height: 10rem;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-between;
-  transition: height,2s; }
+  align-content: stretch;
+  justify-content: stretch; }
+
+.inputContactos {
+  height: 2rem; }
 
 .textoContacto1 {
   text-transform: uppercase;
@@ -247,14 +230,14 @@ select {
 
 .pFooter {
   color: white;
-  font-size: 10px;
+  font-size: 0.8rem;
   text-align: center;
   margin-left: 3.5rem;
   margin-top: 1rem; }
 
 .pFooter2 {
   color: white;
-  font-size: 15px; }
+  font-size: 1rem; }
 
 footer {
   background-image: linear-gradient(to bottom, #720004, black);
@@ -262,36 +245,35 @@ footer {
   padding: 0rem;
   border: 0.3rem;
   border-color: black;
-  border-style: solid; }
+  border-style: solid;
+  justify-content: stretch; }
 
 .pOpciones {
-  font-size: 2rem;
-  margin-left: 10rem; }
+  font-size: 2rem; }
   .pOpciones:hover {
     color: #720004; }
 
 .pOpciones2 {
-  margin-left: 7rem;
-  font-size: 2rem; }
+  font-size: 2rem;
+  margin-left: 1rem; }
   .pOpciones2:hover {
     color: #720004; }
 
+#titulosIndex1 {
+  margin-left: 0.5rem; }
+
 .labelEventos {
-  color: black;
-  margin: 0.5rem; }
+  color: black; }
 
 #portadaEventos {
-  width: 82.5rem;
-  height: 20rem;
-  margin-left: 1rem; }
+  width: 80rem;
+  height: 20rem; }
 
 .h2Eventos {
-  margin-top: 1rem;
-  margin-left: 14rem; }
+  text-align: center; }
 
 .pEventos {
-  margin-left: 10rem;
-  margin-bottom: 2rem; }
+  text-align: center; }
 
 #butPresup {
   margin-top: 2rem; }
@@ -299,12 +281,13 @@ footer {
 .titulosProductos {
   font-family: 'Lato', sans-serif;
   color: white;
-  font-size: 2rem;
   margin: 3rem;
   background-color: #720004;
   border: 0.5rem;
   border-color: black;
-  border-style: solid; }
+  border-style: solid;
+  text-align: center;
+  align-content: center; }
 
 .imgProductos {
   height: 15rem; }
@@ -315,11 +298,56 @@ footer {
   text-align: center;
   font-family: 'Lato', sans-serif;
   color: black;
-  font-size: 2rem;
-  margin-left: 5rem; }
+  font-size: 2rem; }
   .subtitulosProductos:hover {
     color: #720004; }
 
+.selectEventos {
+  width: 40rem;
+  height: 2rem; }
+
 @media (max-width: 768px) {
   #contenedor1 {
-    display: none; } }
+    display: none; }
+  .fieldIndex__textoCentrado2 {
+    font-size: 1rem; }
+  #contenedor3 {
+    display: none; }
+  #footerIndex {
+    display: grid;
+    grid-template-areas: "pFooter2" "labelFooter" "inputFooter"; }
+  .pFooter2 {
+    font-size: 0.7rem; }
+  .pFooter {
+    display: none; }
+  .labelFooter {
+    font-size: 0.7rem; }
+  .inputFooter {
+    width: 8rem; }
+  #imgPortadagrid {
+    display: none; }
+  #grid1Eventos {
+    display: grid;
+    grid-template-areas: "nombreEvento" "nombreEventos" "apeEventos" "apellidoEventos"; }
+  .selectEventos {
+    width: 9rem;
+    height: 2rem; }
+  #grid2Eventos {
+    display: grid;
+    grid-template-areas: "numePerson" "selectEventos1" "tipoEvento" "selectTipoevento"; }
+  #contactoPortada {
+    display: none; }
+  #mapitaContactos {
+    display: none; }
+  #seccion1Contactos {
+    margin-left: 5rem; }
+  #seccion2Contactos {
+    margin-left: 5rem; }
+  #seccion3Contactos {
+    margin-left: 5rem; }
+  #fieldContactos {
+    display: none; }
+  .contenedorImgproducto {
+    display: none; }
+  #footerProductos {
+    margin-left: 2rem; } }

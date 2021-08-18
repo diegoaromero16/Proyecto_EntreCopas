@@ -29,127 +29,133 @@
     <title>Eventos| Distribuidora de bebidas en Córdoba</title>
 </head>
 <body>
-    <div class="Contenedor">
-        <div class="row">
-            <div class="col-12 col-lg-12">
-                <header"> <!--Bloque-->
-                    <nav class="navbar navbar-expand-sm navbar-light bg-light">
-                    <img class="navbar-brand headerIndex__logoHeader" href="#" src="img/Copia de Copia de Blanco Simple Muebles para el Hogar Logo.jpg">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+    <header class="headerIndex">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse headerIndex__menu" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-                            <li class="nav-item">
-                                <a class="nav-link headerIndex__aHeader"  href="index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active headerIndex__aHeader" aria-current="page" href="eventos.html">Eventos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link headerIndex__aHeader" href="Productos.html" >
-                                Productos
-                                </a>
-                            <li class="nav-item ">
-                                <a class="nav-link headerIndex__aHeader" href="Contacto.html">Contacto</a>
-                            </li>
-                        </ul>
-                            <div class="redesDiv"><!--Bloque-->
-                                <a title="facebook" target="_blank" href="www.facebook.com"><img src="img/png-clipart-computer-icons-facebook-inc-social-media-logo-facebook-rectangle-logo.png" class="redesDiv__logosRedesFace" alt="facebook"></a>
-                                <a title="instagram" target="_blank" href="www.instagram.com"><img src="img/png-clipart-logo-social-media-graphic-design-marketing-music-social-media-text-rectangle.png" alt="Instagram" class="redesDiv__logosRedesInsta"></a>
-                            </div>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <img src="img/Copia de Copia de Blanco Simple Muebles para el Hogar Logo.jpg" class="headerIndex__logoHeader">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 headerIndex__menu">
+                        <li class="nav-item headerIndex__enlacesIndex">
+                        <a class="nav-link " aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item headerIndex__enlacesIndex">
+                        <a class="nav-link active" href="eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item headerIndex__enlacesIndex">
+                        <a class="nav-link" href="Productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item headerIndex__enlacesIndex">
+                        <a class="nav-link" href="Contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                     </div>
-                    </nav>
-                </header>
+                </div>
+                </nav>
+        </div>
+    </header>
+
+    <section class="container" id="imgPortadagrid">
+        <div class="row">
+            <div class="col-8"><img src="img/portadaEventosimagen.jpeg" id="portadaEventos"></div>
+        </div>
+    </section>
+
+    <form class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h2 class=" h2Eventos">¿Buscas bebidas para tu evento? Solicita tu presupuesto</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <p class=" pEventos"><strong> Trabajamos en consignacion. Completa el siguiente formulario para solicitar tu presupuesto, te responderemos a la brevedad</strong></p>
             </div>
         </div>
 
-        <section>
-            <div><img src="img/portadaEventosimagen.jpeg" id="portadaEventos"></div>
-        </section>
+        <div class="row" id="grid1Eventos">
+            <label class="labelEventos col-1 offset-1" id="nombreEvento">Nombre:</label>
+            <input type="text" id="nombreEventos" class="col-lg-3">
+            <label class="labelEventos col-1 offset-1" id="apeEventos">Apellido:</label>
+            <input type="text" id="apellidoEventos" class="col-lg-3">
+        </div>
+        <div class="row align-items-center" id="grid2Eventos">
+            <label class="labelEventos col-1 offset-1" id="numePerson">Numero de personas:</label>
+            <select class="selectEventos col-lg-3" id="selectEvento1">
+                <option selected>Elegi la cantidad</option>
+                <option>0-50</option>
+                <option>50-100</option>
+                <option>100-150</option>
+                <option>200 o más</option>
+            </select>
+            <label class="labelEventos col-1 offset-1" id="tipoEvento">Tipo de evento:</label>
+            <select class="col-lg-3 selectEventos" id="selectTipoevento">
+                <option selected>Elegi una opcion</option>
+                <option>Bautismo</option>
+                <option>Casamiento</option>
+                <option>Fiesta fin de año</option>
+                <option>Cumpleaños</option>
+            </select>
+        </div>
+        
+        <div class="row">
+            <label class="labelEventos col-11 offset-1">Elegí el tipo de bebidas:</label>
+            <p class="col-10 offset-1">
+            <input type="checkbox"> Cervezas<br>
+            <input type="checkbox"> Vinos<br>
+            <input type="checkbox"> Espumantes / Champagne<br>
+            <input type="checkbox"> Licores<br>
+            <input type="checkbox"> Otro<br>
+            </p>
+        </div>
 
-        <section id="formEventos">
-            <form class="container-fluid">
-                <h2 class="col-lg-12 h2Eventos">¿Buscas bebidas para tu evento? Solicita tu presupuesto</h2>
-                <p class="col-lg-12 pEventos"><strong> Trabajamos en consignacion. Completa el siguiente formulario para solicitar tu presupuesto, te responderemos a la brevedad</strong></p>
-                <div class="row">
-                    <label class="labelEventos col-lg-1 offset-1">Nombre:</label>
-                    <input type="text" id="nombreEventos" class="col-lg-3">
-                    <label class="labelEventos col-lg-1 offset-1">Apellido:</label>
-                    <input type="text" id="apellidoEventos" class="col-lg-3">
-                </div>
-                <div class="row align-items-center">
-                    <label class="labelEventos col-lg-1 offset-1">Numero de personas:</label>
-                    <select class="selectEventos col-lg-3">
-                        <option selected>Elegi la cantidad</option>
-                        <option>0-50</option>
-                        <option>50-100</option>
-                        <option>100-150</option>
-                        <option>200 o más</option>
-                    </select>
-                    <label class="labelEventos col-lg-1 offset-1">Tipo de evento:</label>
-                    <select class="col-lg-3">
-                        <option selected>Elegi una opcion</option>
-                        <option>Bautismo</option>
-                        <option>Casamiento</option>
-                        <option>Fiesta fin de año</option>
-                        <option>Cumpleaños</option>
-                    </select>
-                </div>
-                
-                <div class="row">
-                    <label class="labelEventos col-lg-11 offset-1">Elegí el tipo de bebidas:</label>
-                    <p class="col-lg-10 offset-1">
-                    <input type="checkbox"> Cervezas<br>
-                    <input type="checkbox"> Vinos<br>
-                    <input type="checkbox"> Espumantes / Champagne<br>
-                    <input type="checkbox"> Licores<br>
-                    <input type="checkbox"> Otro<br>
-                    </p>
-                </div>
+        <div class="row align-items-center">
+            <label class="labelEventos offset-1 col-1">Direccion del evento:</label>
+            <input type="text" class="col-lg-3 selectEventos">
+            <label class="labelEventos offset-1 col-1">Barrio:</label>
+            <input type="text" class="col-lg-3 selectEventos">
+        <div class="row align-items-center">
+            <label class="labelEventos col-1 offset-1">Localidad:</label>
+            <select class="col-lg-3 selectEventos">
+                <option selected>Elige una opcion</option>
+                <option>Cordoba</option>
+                <option>Santa Fe</option>
+                <option>Buenos Aires</option>
+            </select>                    
+            <label class="labelEventos col-1 offset-1">Region/Provincia:</label>
+            <select class="col-lg-3 selectEventos">
+                <option selected>Elegi tu provincia</option>
+                <option>Cordoba</option>
+                <option>Buenos Aires</option>
+                <option>Santa Fe</option>
+                <option>Mendoza</option>
+            </select>
+        </div>
+        <div class="row align-items-center justify-content-center">
+            <button type="button" id="butPresup" class="btn btn-danger col-lg-2"> Pedir presupuesto</button>
+        </div>
+        
+    </form>
 
-                <div class="row align-items-center">
-                    <label class="labelEventos offset-md-1 col-lg-1">Direccion del evento:</label>
-                    <input type="text" class="col-lg-3">
-                    <label class="labelEventos offset-1 col-lg-1">Barrio:</label>
-                    <input type="text" class="col-lg-3">
-                    <label class="labelEventos col-lg-1 offset-1">Localidad:</label>
-                    <select class="col-lg-3">
-                        <option selected>Elige una opcion</option>
-                        <option>Cordoba</option>
-                        <option>Santa Fe</option>
-                        <option>Buenos Aires</option>
-                    </select>                    
-                    <label class="labelEventos col-lg-1 offset-1">Region/Provincia:</label>
-                    <select class="col-lg-3">
-                        <option selected>Elegi tu provincia</option>
-                        <option>Cordoba</option>
-                        <option>Buenos Aires</option>
-                        <option>Santa Fe</option>
-                        <option>Mendoza</option>
-                    </select>
-                    
-                </div>
-                <button type="button" id="butPresup" class="btn btn-danger offset-1"> Pedir presupuesto</button>
-            </form>
-        </section>
 
-        <footer id="footerContacto">
+        <footer class="container" id="footerIndex">
             <form>
-                <div class="row">
-                    <div class="col-lg-3">
+                <div class="row justify-content-between">
+                    <div class="col-3">
                         <p class="pFooter2">Duarte Quirós 2171<br>
                         CP: 5000 / Córdoba - Argentina <br>
                         Tel: 0351 156200638 <br>
                         entrecopas@gmail.com</p>
                     </div>
-                    <div class="col-lg-3"><label class="labelFooter">Suscribite para recibir nuestras promos:</label></div>
-                    <div class="col-lg-3"><input type="email" class="inputFooter"></div>
-                    <div class="col-lg-3"><p class="pFooter"> © Entre Copas bebidas | Los Derechos Reservados| BEBER CON MODERACIÓN. <br>PROHIBIDA SU VENTA A MENORES DE 18 AÑOS.</p></div>
+                    <div class="col-3"><label class="labelFooter">Suscribite para recibir nuestras promos:</label></div>
+                    <div class="col-3"><input type="email" class="inputFooter"></div>
+                    <div class="col-3"><p class="pFooter"> © Entre Copas bebidas | Los Derechos Reservados| BEBER CON MODERACIÓN. <br>PROHIBIDA SU VENTA A MENORES DE 18 AÑOS.</p></div>
                 </div>
             </form>
         </footer>
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
